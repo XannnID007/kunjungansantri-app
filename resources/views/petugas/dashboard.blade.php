@@ -110,7 +110,7 @@
 
     <div class="row">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card mt-4">
                 <div class="card-header">
                     <h4 class="card-title">Kunjungan Terbaru</h4>
                 </div>
@@ -156,24 +156,6 @@
         </div>
 
         <div class="col-md-4">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Menu Cepat</h4>
-                </div>
-                <div class="card-body">
-                    <div class="d-grid gap-2">
-                        <a href="{{ route('petugas.antrian.index') }}" class="btn btn-primary btn-lg mb-3">
-                            <i class="fas fa-people-arrows"></i> Kelola Antrian
-                        </a>
-                        <a href="{{ route('petugas.kunjungan.index') }}" class="btn btn-info btn-lg mb-3">
-                            <i class="fas fa-clipboard-list"></i> Data Kunjungan
-                        </a>
-                        <a href="{{ route('petugas.barang.index') }}" class="btn btn-success btn-lg">
-                            <i class="fas fa-box"></i> Pengaturan Barang
-                        </a>
-                    </div>
-                </div>
-            </div>
 
             <div class="card mt-4">
                 <div class="card-header">
