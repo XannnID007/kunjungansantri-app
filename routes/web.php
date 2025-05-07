@@ -52,7 +52,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::patch('/jadwal/{jadwal}/toggle-status', [JadwalOperasionalController::class, 'toggleStatus'])->name('jadwal.toggleStatus');
     Route::resource('kunjungan', AdminKunjunganController::class);
     Route::resource('users', UserController::class);
-    Route::patch('/users/{active}/toggle-active', [UserController::class, 'toggleActive'])->name('jadwal.toggleActive');
+    Route::patch('/admin/users/{user}/toggle-active', [UserController::class, 'toggleActive'])->name('users.toggleActive');
 
     // Laporan
     Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index');
